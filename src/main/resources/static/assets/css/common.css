@@ -1,0 +1,417 @@
+@charset "UTF-8";
+/*
+* 公共样式
+*/
+* {
+  -ms-touch-action: pan-y;
+      touch-action: pan-y;
+}
+
+li {
+  list-style: none;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: 'PingFangSCMedium';
+  background-color: #fff;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-green {
+  background-color: #f4f8ff;
+}
+
+.header-icon-black .mui-icon {
+  color: #1c1c1c;
+  font-size: 36px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.header-icon-black h1 {
+  font-size: 0.36rem;
+  font-family: "PingFangSCBold";
+}
+
+.large-btn {
+  width: 100%;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  font-size: 0.36rem;
+  color: #fff;
+  background-color: #3aaaa8;
+  text-align: center;
+  border-radius: 0.4rem;
+  margin-top: 0.75rem;
+  -webkit-box-shadow: 0 0 10px #3aaaa8;
+          box-shadow: 0 0 10px #3aaaa8;
+  margin-bottom: 0.34rem;
+}
+
+/*
+* 登录
+*/
+.page-login .mui-bar-nav {
+  border-bottom: 0;
+  background: transparent;
+}
+.page-login .mui-bar-nav a, .page-login .mui-bar-nav h1 {
+  color: #fff;
+}
+.page-login .mui-content {
+  background: url(../images/bg-login.png) no-repeat;
+  background-size: 100% 8.37rem;
+}
+.page-login .mui-scroll {
+  padding: 0 0.62rem;
+  margin-top: 6.1rem;
+}
+.page-login .input-register {
+  position: relative;
+  margin-top: 0.43rem;
+  width: 100%;
+  height: 0.85rem;
+  background-color: #f4f8f7;
+  border-radius: 5px;
+}
+.page-login .input-register input {
+  font-size: 0.3rem;
+  width: 45%;
+  height: 0.85rem;
+  line-height: 0.85rem;
+  position: absolute;
+  left: 0.85rem;
+  background-color: transparent;
+  border: 0;
+}
+.page-login .input-register i {
+  display: block;
+  width: 0.5rem;
+  height: 0.5rem;
+  position: absolute;
+  top: 0.2rem;
+  left: 0.32rem;
+}
+.page-login .input-register .icon-phone {
+  background: url(../images/icon-phone.png) no-repeat;
+  background-size: contain;
+}
+.page-login .input-register .icon-lock {
+  background: url(../images/icon-lock.png) no-repeat;
+  background-size: contain;
+}
+.page-login .account-operation {
+  margin-top: 0.25rem;
+}
+.page-login .account-operation span {
+  font-size: 0.26em;
+  color: #999999;
+}
+.page-login .account-operation .modifypas {
+  float: left;
+  margin-left: 0.3rem;
+}
+.page-login .account-operation .registeracc {
+  float: right;
+  margin-right: 0.3rem;
+}
+
+/*
+* 注册，修改密码
+*/
+.page-register .mui-scroll, .page-modifyPassword .mui-scroll {
+  padding: 0 0.62rem;
+}
+.page-register .input-register, .page-modifyPassword .input-register {
+  position: relative;
+  margin-top: 0.43rem;
+  width: 100%;
+  height: 0.85rem;
+  background-color: #f4f8f7;
+  border-radius: 5px;
+}
+.page-register .input-register input, .page-modifyPassword .input-register input {
+  font-size: 0.3rem;
+  width: 45%;
+  height: 0.85rem;
+  line-height: 0.85rem;
+  position: absolute;
+  left: 0.85rem;
+  background-color: transparent;
+  border: 0;
+}
+.page-register .input-register i, .page-modifyPassword .input-register i {
+  display: block;
+  width: 0.5rem;
+  height: 0.5rem;
+  position: absolute;
+  top: 0.2rem;
+  left: 0.32rem;
+}
+.page-register .input-register .icon-phone, .page-modifyPassword .input-register .icon-phone {
+  background: url(../images/icon-phone.png) no-repeat;
+  background-size: contain;
+}
+.page-register .input-register .icon-lock, .page-modifyPassword .input-register .icon-lock {
+  background: url(../images/icon-lock.png) no-repeat;
+  background-size: contain;
+}
+.page-register .input-register .verification, .page-modifyPassword .input-register .verification {
+  height: 0.46rem;
+  line-height: 0.46rem;
+  padding: 0 0.3rem;
+  color: #8ec4c8;
+  border: 1px solid #8ec4c8;
+  position: absolute;
+  right: 0.2rem;
+  top: 0.2rem;
+  border-radius: 0.23rem;
+}
+
+/*
+* 登记成功
+*/
+.page-registrationSuc .suc, .page-registrationSuc_copy .suc, .page-registrationSuc_copy2 .suc {
+  height: 2.58rem;
+  background: url(../images/bg-success.png);
+  background-size: 100% 100%;
+  position: relative;
+}
+.page-registrationSuc .suc .tips, .page-registrationSuc_copy .suc .tips, .page-registrationSuc_copy2 .suc .tips {
+  position: absolute;
+  color: #fff;
+  font-size: 0.36rem;
+  left: 0;
+  right: 0;
+  bottom: 0.38rem;
+  text-align: center;
+}
+.page-registrationSuc .large-btn, .page-registrationSuc_copy .large-btn, .page-registrationSuc_copy2 .large-btn {
+  width: 80%;
+  margin: 0.75rem 10% 0;
+}
+.page-registrationSuc .notice, .page-registrationSuc_copy .notice, .page-registrationSuc_copy2 .notice {
+  font-size: 0.3rem;
+  color: #333;
+  text-align: center;
+  margin-top: 0.48rem;
+}
+
+/*
+* 预审登记1,备案登记
+*/
+.page-PretrialRegistration1 .mui-content, .page-filingRegistration .mui-content {
+  /*margin-top: 44px;*/
+  padding: 0.16rem;
+}
+.page-PretrialRegistration1 .mui-input-group input::-webkit-input-placeholder, .page-filingRegistration .mui-input-group input::-webkit-input-placeholder {
+  text-align: right;
+}
+.page-PretrialRegistration1 .mui-input-row label, .page-filingRegistration .mui-input-row label {
+  width: auto;
+  padding: 11px 0 11px 15px;
+}
+.page-PretrialRegistration1 .mui-input-row label ~ input, .page-filingRegistration .mui-input-row label ~ input {
+  width: auto;
+  margin-right: 5%;
+}
+.page-PretrialRegistration1 .mui-input-row input, .page-filingRegistration .mui-input-row input {
+  text-align: right;
+}
+.page-PretrialRegistration1 .mui-input-row input[type="radio"], .page-filingRegistration .mui-input-row input[type="radio"] {
+  width: 20px;
+}
+.page-PretrialRegistration1 .mui-input-row .radioSel, .page-PretrialRegistration1 .mui-input-row .upload, .page-filingRegistration .mui-input-row .radioSel, .page-filingRegistration .mui-input-row .upload {
+  width: auto;
+  float: right;
+  text-align: right;
+  margin-right: 5%;
+  line-height: 40px;
+}
+.page-PretrialRegistration1 .mui-input-row .upload .btn-upload, .page-filingRegistration .mui-input-row .upload .btn-upload {
+  height: 0.36rem;
+  line-height: 0.36rem;
+  background-color: #349fa8;
+  color: #fff;
+  font-size: 0.24rem;
+  border-radius: 0.18rem;
+  padding: 0 0.2rem;
+}
+
+/*
+* 预审登记
+*/
+.page-PretrialRegistration .mui-content {
+  /*margin-top: 44px;*/
+  padding: 0.16rem;
+}
+.page-PretrialRegistration .msg-registration {
+  padding: 0.25rem 0.4rem 0.15rem;
+}
+.page-PretrialRegistration .msg-registration span {
+  font-size: 0.32rem;
+  color: #000;
+}
+.page-PretrialRegistration .msg-registration .title {
+  display: inline-block;
+  min-width: 1.6rem;
+}
+.page-PretrialRegistration .btnsel {
+  margin-top: 0.56rem;
+  padding: 0 1.1rem;
+}
+.page-PretrialRegistration .btnsel .btn-pass {
+  float: left;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  text-align: center;
+  color: #fff;
+  background-color: #349fa8;
+  padding: 0 0.5rem;
+  border-radius: 0.3rem;
+}
+.page-PretrialRegistration .btnsel .btn-notpass {
+  float: right;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  text-align: center;
+  color: #fff;
+  background-color: #fa9532;
+  padding: 0 0.5rem;
+  border-radius: 0.3rem;
+}
+
+/*
+* 待审核，已审核
+*/
+.page-toBeAudited {
+  min-height: 100%;
+  background: #f4f8ff;
+}
+.page-toBeAudited .tab-catalog {
+  height: 0.85rem;
+  line-height: 0.85rem;
+  padding: 0 0.66rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+}
+.page-toBeAudited .tab-catalog span {
+  display: inline-block;
+  width: 50%;
+  position: relative;
+}
+.page-toBeAudited .tab-catalog span.active:after {
+  content: "";
+  display: inline-block;
+  height: 4px;
+  width: 100%;
+  background-color: #349fa8;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.page-toBeAudited .tab-con {
+  padding: 0.15rem;
+  position: relative;
+  top: 0;
+  bottom: 0;
+}
+.page-toBeAudited .tab-con ul {
+  margin: 0;
+  padding: 0;
+}
+.page-toBeAudited .tab-con ul li {
+  background-color: #fff;
+  border-radius: 5px;
+  margin-bottom: 0.15rem;
+}
+.page-toBeAudited .tab-con ul .li-top {
+  height: 0.8rem;
+  line-height: 0.8rem;
+  border-bottom: 1px solid #e5e5e5;
+  padding-left: 0.4rem;
+  position: relative;
+}
+.page-toBeAudited .tab-con ul .li-top span {
+  font-size: 0.28rem;
+  color: #585858;
+}
+.page-toBeAudited .tab-con ul .li-top:before {
+  content: "";
+  display: inline-block;
+  height: 0.28rem;
+  width: 6px;
+  background-color: #349fa8;
+  position: absolute;
+  left: 0.2rem;
+  top: 0.26rem;
+  border-radius: 3px;
+}
+.page-toBeAudited .tab-con ul .li-top .span3 {
+  float: right;
+  margin-right: 0.18rem;
+  font-size: 0.3rem;
+  color: #fa9532;
+  font-weight: bold;
+}
+.page-toBeAudited .tab-con ul .li-bottom {
+  padding: 0.25rem 0.4rem 0.15rem;
+}
+.page-toBeAudited .tab-con ul .li-bottom span {
+  font-size: 0.32rem;
+  color: #000;
+}
+.page-toBeAudited .tab-con ul .li-bottom .title {
+  display: inline-block;
+  min-width: 1.6rem;
+}
+.page-toBeAudited .tab-con .tobe {
+  display: none;
+}
+.page-toBeAudited .tab-con ul.active {
+  display: block;
+}
+
+/*
+* mui调整
+*/
+.mui-bar-nav {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-bottom: 3px solid #f6f5f5;
+}
+
+input[type=text] {
+  margin-bottom: 0;
+  padding: 0;
+}
+
+input, select, textarea {
+  font-family: 'PingFangSCMedium';
+}
+
+.mui-btn, button {
+  padding: 0;
+}
+
+.mui-input-row label ~ input {
+  height: 40px;
+}
+
+.mui-input-group .mui-input-row:after {
+  right: 15px;
+}
+
+.mui-scroll-wrapper {
+  overflow: visible;
+  min-height: 100%;
+}

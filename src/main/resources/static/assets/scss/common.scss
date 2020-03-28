@@ -1,0 +1,410 @@
+/*
+* 公共样式
+*/
+* { touch-action: pan-y; }
+li{
+    list-style: none;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: 'PingFangSCMedium';
+    background-color: #fff;
+}
+.bg-white{
+    background-color: #fff;
+}
+.bg-green{
+    background-color: #f4f8ff;
+}
+.header-icon-black{
+    .mui-icon{
+        color: #1c1c1c;
+        font-size: 36px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+    h1{
+        font-size: 0.36rem;
+        font-family: "PingFangSCBold";
+    }
+}
+.large-btn{
+    width: 100%;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    font-size: 0.36rem;
+    color: #fff;
+    background-color: #3aaaa8;
+    text-align: center;
+    border-radius: 0.4rem;
+    margin-top: 0.75rem;
+    box-shadow: 0 0 10px #3aaaa8;
+    margin-bottom: 0.34rem;
+}
+/*
+* 登录
+*/
+.page-login{
+    .mui-bar-nav{
+        border-bottom: 0;
+        background: transparent;
+        a,h1{
+            color: #fff;
+        }
+    }
+    .mui-content{
+        background: url(../images/bg-login.png) no-repeat;
+        background-size: contain
+    }
+    .mui-scroll{
+        padding: 0 0.62rem;
+        margin-top: 6.1rem;
+    }
+    .input-register{
+        position: relative;
+        margin-top: 0.43rem;
+        width: 100%;
+        height: 0.85rem;
+        background-color: #f4f8f7;
+        border-radius: 5px;
+        input{
+            font-size: 0.3rem;
+            width: 45%;
+            height: 0.85rem;
+            line-height: 0.85rem;
+            position: absolute;
+            left: 0.85rem;
+            background-color: transparent;
+            border: 0;
+        }
+        i{
+            display: block;
+            width: 0.5rem;
+            height: 0.5rem;
+            
+            position: absolute;
+            top: 0.2rem;
+            left: 0.32rem
+        }
+        .icon-phone{
+            background: url(../images/icon-phone.png) no-repeat;
+            background-size: contain;
+        }
+        .icon-lock{
+            background: url(../images/icon-lock.png) no-repeat;
+            background-size: contain;
+        }
+    }
+    .account-operation{
+        margin-top: 0.25rem;
+        span{
+            font-size: 0.26em;
+            color: #999999;
+        }
+        .modifypas{
+            float: left;
+            margin-left: 0.3rem;
+        }
+        .registeracc{
+            float: right;
+            margin-right: 0.3rem;
+        }
+    }
+}
+/*
+* 注册，修改密码
+*/
+.page-register,.page-modifyPassword{
+    .mui-scroll{
+        padding: 0 0.62rem;
+    }
+    .input-register{
+        position: relative;
+        margin-top: 0.43rem;
+        width: 100%;
+        height: 0.85rem;
+        background-color: #f4f8f7;
+        border-radius: 5px;
+        input{
+            font-size: 0.3rem;
+            width: 45%;
+            height: 0.85rem;
+            line-height: 0.85rem;
+            position: absolute;
+            left: 0.85rem;
+            background-color: transparent;
+            border: 0;
+        }
+        i{
+            display: block;
+            width: 0.5rem;
+            height: 0.5rem;
+            
+            position: absolute;
+            top: 0.2rem;
+            left: 0.32rem
+        }
+        .icon-phone{
+            background: url(../images/icon-phone.png) no-repeat;
+            background-size: contain;
+        }
+        .icon-lock{
+            background: url(../images/icon-lock.png) no-repeat;
+            background-size: contain;
+        }
+        .verification{
+            height: 0.46rem;
+            line-height: 0.46rem;
+            padding: 0 0.3rem;
+            color: #8ec4c8;
+            border: 1px solid #8ec4c8;
+            position: absolute;
+            right: 0.2rem;
+            top: 0.2rem;
+            border-radius: 0.23rem;
+        }
+    }
+}
+/*
+* 登记成功
+*/
+.page-registrationSuc,.page-registrationSuc_copy,.page-registrationSuc_copy2{
+    .suc{
+        height: 2.58rem;
+        background: url(../images/bg-success.png);
+        background-size: 100% 100%;
+        position: relative;
+        .tips{
+            position: absolute;
+            color: #fff;
+            font-size: 0.36rem;
+            left: 0;
+            right: 0;
+            bottom: 0.38rem;
+            text-align: center;
+        }
+    }
+    .large-btn{
+        width: 80%;
+        margin: 0.75rem 10% 0;
+    }
+    .notice{
+        font-size: 0.3rem;
+        color: #333;
+        text-align: center;
+        margin-top: 0.48rem;
+    }
+}
+/*
+* 预审登记1,备案登记
+*/
+.page-PretrialRegistration1,.page-filingRegistration{
+    .mui-content{
+        margin-top: 44px;
+        padding: 0.16rem;
+    }
+    .mui-input-group{
+        input::-webkit-input-placeholder{
+            text-align: right;
+        }
+    }
+    .mui-input-row label{
+        width: auto;
+        padding: 11px 0 11px 15px;
+    }
+    .mui-input-row label~input{
+        width: auto;
+        margin-right: 5%;
+    }
+    .mui-input-row{
+        input{
+            text-align: right;
+        }
+        input[type="radio"]{
+            width: 20px;
+        }
+        .radioSel,.upload{
+            width: auto;
+            float: right;
+            text-align: right;
+            margin-right: 5%;
+            line-height: 40px;
+        }
+        .upload{
+            .btn-upload{
+                height: 0.36rem;
+                line-height: 0.36rem;
+                background-color: #349fa8;
+                color: #fff;
+                font-size: 0.24rem;
+                border-radius: 0.18rem;
+                padding: 0 0.2rem
+            }
+        }
+    }
+}
+/*
+* 预审登记
+*/
+.page-PretrialRegistration{
+    .mui-content{
+        margin-top: 44px;
+        padding: 0.16rem;
+    }
+    .msg-registration{
+        padding: 0.25rem 0.4rem 0.15rem;
+        span{
+            font-size: 0.32rem;
+            color: #000;
+        }
+        .title{
+            display: inline-block;
+            min-width: 1.6rem;
+        }
+    }
+    .btnsel{
+        margin-top: 0.56rem;
+        padding: 0 1.1rem;
+        .btn-pass{
+            float: left;
+            height: 0.6rem;
+            line-height: 0.6rem;
+            text-align: center;
+            color: #fff;
+            background-color: #349fa8;
+            padding: 0 0.5rem;
+            border-radius: 0.3rem;
+        }
+        .btn-notpass{
+            float: right;
+            height: 0.6rem;
+            line-height: 0.6rem;
+            text-align: center;
+            color: #fff;
+            background-color: #fa9532;
+            padding: 0 0.5rem;
+            border-radius: 0.3rem;
+        }
+    }
+}
+/*
+* 待审核，已审核
+*/
+.page-toBeAudited{
+    min-height: 100%;
+    background: #f4f8ff;
+    .tab-catalog{
+        height: 0.85rem;
+        line-height: 0.85rem;
+        padding: 0 0.66rem;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        span{
+            display: inline-block;
+            width: 50%;
+            position: relative;
+        }
+        span.active{
+            &:after{
+                content: "";
+                display: inline-block;
+                height: 4px;
+                width: 100%;
+                background-color: #349fa8;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+        }
+    }
+    .tab-con{
+        padding: 0.15rem;
+        position: relative;
+        top: 0;
+        bottom: 0;
+        ul{
+            margin: 0;
+            padding: 0;
+            li{
+                background-color: #fff;
+                border-radius: 5px;
+                margin-bottom: 0.15rem;
+            }
+            .li-top{
+                height: 0.8rem;
+                line-height: 0.8rem;
+                border-bottom: 1px solid #e5e5e5;
+                padding-left: 0.4rem; 
+                position: relative;
+                span{
+                    font-size: 0.28rem;
+                    color: #585858;
+                }
+                &:before{
+                    content: "";
+                    display: inline-block;
+                    height: 0.28rem;
+                    width: 6px;
+                    background-color: #349fa8;
+                    position: absolute;
+                    left: 0.2rem;
+                    top: 0.26rem;
+                    border-radius: 3px;
+                }
+                .span3{
+                    float: right;
+                    margin-right: 0.18rem;
+                    font-size: 0.3rem;
+                    color: #fa9532;
+                    font-weight: bold;
+                }
+            }
+            .li-bottom{
+                padding: 0.25rem 0.4rem 0.15rem;
+                span{
+                    font-size: 0.32rem;
+                    color: #000;
+                }
+                .title{
+                    display: inline-block;
+                    min-width: 1.6rem;
+                }
+            }
+        }
+        .tobe{
+            display: none;
+        }
+        ul.active{
+            display: block;
+        }
+    }
+}
+/*
+* mui调整
+*/
+.mui-bar-nav{
+    box-shadow: none;
+    border-bottom: 3px solid #f6f5f5 
+}
+input[type=text]{
+    margin-bottom: 0;
+    padding: 0;
+}
+input, select, textarea{
+    font-family: 'PingFangSCMedium';
+}
+.mui-btn,button{
+    padding: 0;
+}
+.mui-input-row label~input{
+    height: 40px;
+}
+.mui-input-group .mui-input-row:after{
+    right: 15px;
+}
+.mui-scroll-wrapper{
+    overflow: visible;
+    min-height: 100%;
+}
